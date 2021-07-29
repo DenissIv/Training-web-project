@@ -2869,6 +2869,8 @@ button:active {
   }
   button#toTheTop {
     display: none;
+    width: 20px;
+    height: 20px;
     position: fixed;
     bottom: 1%;
     left: 20%;
