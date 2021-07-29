@@ -2883,4 +2883,10 @@ button:active {
     border-radius: 50%;
   }
 }
+
+.footer-menu {
+    a {
+        color: #FFF;
+    }
+}
 /*# sourceMappingURL=style.css.map */
