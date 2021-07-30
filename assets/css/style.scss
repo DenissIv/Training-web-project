@@ -1,0 +1,2513 @@
+@import "normalize.scss";
+@import "reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+//*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+
+/* Sections
+     ========================================================================== */
+
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+    margin: 0;
+}
+
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+    display: block;
+}
+
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+
+/* Grouping content
+     ========================================================================== */
+
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+
+/* Text-level semantics
+     ========================================================================== */
+
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+    background-color: transparent;
+}
+
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+    font-size: 80%;
+}
+
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+
+/* Embedded content
+     ========================================================================== */
+
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+    border-style: none;
+}
+
+
+/* Forms
+     ========================================================================== */
+
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+    vertical-align: baseline;
+}
+
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+    overflow: auto;
+}
+
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type="checkbox"],
+[type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+
+/* Interactive
+     ========================================================================== */
+
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
+    display: block;
+}
+
+
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+    display: list-item;
+}
+
+
+/* Misc
+     ========================================================================== */
+
+
+/**
+   * Add the correct display in IE 10+.
+   */
+
+template {
+    display: none;
+}
+
+
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+body {
+    width: 1366px;
+    margin: 0px auto;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        width: 768px;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        width: 320px;
+        margin: 0px auto;
+    }
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.x-box {
+    display: none;
+}
+
+.menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1366px;
+    height: 762px;
+}
+
+img.menu-border {
+    display: block;
+    width: 1366px;
+    height: 128px;
+    position: absolute;
+}
+
+.content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+}
+
+.logo-box {
+    margin-left: 62px;
+    width: 159px;
+    height: 146px;
+    z-index: 1;
+}
+
+.item {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #060606;
+    margin-top: 51px;
+}
+
+.item:hover {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #060606;
+    border-bottom: 3px solid #FFA800;
+}
+
+.content-box :first-child {
+    margin-left: 84px;
+}
+
+.content-box :nth-child(2),
+.content-box :nth-child(4),
+.content-box :nth-child(5) {
+    margin-left: 35px;
+}
+
+.content-box :nth-child(3),
+.content-box :nth-child(6) {
+    margin-left: 27px;
+}
+
+.content-box :last-child {
+    margin-left: 54px;
+    width: 29px;
+    height: 24px;
+}
+
+.content-box :nth-child(1) {
+    width: 46px;
+    height: 24px;
+}
+
+.content-box :nth-child(2) {
+    width: 130px;
+    height: 24px;
+}
+
+.content-box :nth-child(3) {
+    width: 120px;
+    height: 24px;
+}
+
+.content-box :nth-child(4) {
+    width: 123px;
+    height: 24px;
+}
+
+.content-box :nth-child(5) {
+    width: 153px;
+    height: 24px;
+}
+
+.content-box :nth-child(6) {
+    width: 188px;
+    height: 24px;
+}
+
+.video-container {
+    position: absolute;
+    top: 47px;
+    background-image: url("../img/Sparkle Video 1.png");
+    width: 1366px;
+    height: 722px;
+    z-index: -1;
+}
+
+.play-button {
+    margin-top: 350px;
+    margin-left: 620px;
+}
+
+.button-box {
+    position: absolute;
+    width: 86px;
+    height: 83px;
+}
+
+@media only screen and (max-width: 800px) {
+    .dropdown-menu {
+        display: none;
+        margin-top: -380px;
+    }
+    .tablet-menu {
+        display: block;
+        position: relative;
+        top: 35px;
+        left: 455px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/Vectortablet.png);
+        background-color: white;
+        z-index: 3;
+    }
+    .tablet-menu:hover {
+        background-color: white;
+    }
+    .lang-flex {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .dropdown-top-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a {
+            margin-top: 80px;
+        }
+    }
+    .dropdown-top-menu a:nth-child(1) {
+        width: 46px;
+    }
+    .dropdown-top-menu a:nth-child(2) {
+        width: 124px;
+    }
+    .dropdown-top-menu a:nth-child(3) {
+        width: 120px;
+    }
+    .dropdown-top-menu a:nth-child(4) {
+        width: 122px;
+    }
+    .dropdown-top-menu a:nth-child(5) {
+        width: 149px;
+    }
+    .dropdown-top-menu a:nth-child(6) {
+        width: 182px;
+    }
+    div.x-box img {
+        width: 22px;
+        height: 22px;
+    }
+    div.menu-container {
+        max-width: 768px;
+        width: 768px;
+        max-height: 490px;
+        height: 490px;
+    }
+    img.menu-border {
+        width: 768px;
+        height: 80px;
+        position: absolute;
+        top: 25px;
+    }
+    div.content-box {
+        display: none;
+    }
+    div.logo-box {
+        position: relative;
+        left: -69px;
+        width: 78px;
+        height: 49px;
+        z-index: 1;
+    }
+    .logo-box img {
+        width: 130px;
+        height: 80px;
+    }
+    .item {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #060606;
+        margin-top: 51px;
+    }
+    .item:hover {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #060606;
+        border-bottom: 3px solid #FFA800;
+    }
+    div.video-container {
+        position: absolute;
+        top: 72px;
+        background-image: url("../img/Sparkle Video 1.png");
+        background-size: 768px;
+        width: 768px;
+        height: 406px;
+        z-index: -1;
+    }
+    img.play-button {
+        width: 123px;
+        height: 120px;
+        margin: 0px;
+    }
+    div.button-box {
+        position: relative;
+        top: 218px;
+        left: 322px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .dropdown-menu {
+        display: none;
+        margin-top: -220px;
+    }
+    .lang-flex {
+        display: flex;
+        justify-content: space-between;
+        width: 140px;
+        margin: 0 auto;
+        margin-top: 45px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .dropdown-top-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a {
+            margin-top: 40px;
+        }
+    }
+    .dropdown-top-menu a:nth-child(1) {
+        width: 46px;
+    }
+    .dropdown-top-menu a:nth-child(2) {
+        width: 124px;
+    }
+    .dropdown-top-menu a:nth-child(3) {
+        width: 120px;
+    }
+    .dropdown-top-menu a:nth-child(4) {
+        width: 122px;
+    }
+    .dropdown-top-menu a:nth-child(5) {
+        width: 149px;
+    }
+    .dropdown-top-menu a:nth-child(6) {
+        width: 182px;
+    }
+    .tablet-menu {
+        display: block;
+        position: relative;
+        top: 20px;
+        left: 70px;
+        width: 18.35px;
+        height: 14.8px;
+        background-image: url(../img/Vectortablet.png);
+        background-size: 18.35px 14.8px;
+        background-color: white;
+    }
+    div.menu-container {
+        width: 320px;
+        height: 220px;
+    }
+    header img.menu-border {
+        display: block;
+        width: 320px;
+        height: 127.44px;
+        position: absolute;
+        top: -20px;
+    }
+    div.content-box {
+        display: none;
+    }
+    div.logo-box {
+        position: relative;
+        left: -124px;
+        width: 78px;
+        height: 49px;
+        z-index: 1;
+    }
+    .logo-box img {
+        width: 78px;
+        height: 49px;
+    }
+    .item {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #060606;
+        margin-top: 51px;
+    }
+    .item:hover {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #060606;
+        border-bottom: 3px solid #FFA800;
+    }
+    div.video-container {
+        position: absolute;
+        top: 48px;
+        background-image: url("../img/Sparkle Video 1.png");
+        background-size: 320px;
+        width: 320px;
+        height: 169px;
+        z-index: -1;
+    }
+    img.play-button {
+        width: 73px;
+        height: 70px;
+        margin: 0px;
+    }
+    div.button-box {
+        position: relative;
+        top: 100px;
+        left: 125px;
+        width: 83px;
+        height: 80px;
+    }
+}
+
+p.SparkleHeart {
+    position: relative;
+    width: 654px;
+    height: 114px;
+    margin: 0 auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 157px;
+}
+
+.photos-container {
+    margin-top: 150px;
+}
+
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 18px;
+}
+
+.flex-container .first img {
+    margin-top: -4px;
+}
+
+.flex-container .fifth img {
+    margin-top: -18px;
+}
+
+.flex-container .second,
+.third img {
+    padding-top: 1px;
+}
+
+.top-border {
+    position: absolute;
+    width: 1366px;
+    height: 55px;
+}
+
+.bottom-border {
+    position: relative;
+    top: -40px;
+    width: 1366px;
+    height: 55px;
+}
+
+.photos-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.photo {
+    line-height: 0;
+}
+
+.question-container {
+    height: 29px;
+    margin-top: 110px;
+}
+
+.question-container h2 {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #2F4858;
+}
+
+.buttons-container button {
+    border-radius: 24px;
+    height: 50px;
+    width: 233px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: #FFA800;
+    margin: 0 auto;
+}
+
+.first-question {
+    position: relative;
+    width: 394px;
+    height: 29px;
+    left: 220px;
+}
+
+.second-question {
+    position: relative;
+    top: -29px;
+    left: 698px;
+    width: 500px;
+    height: 29px;
+}
+
+.first-button {
+    position: relative;
+    width: 233px;
+    height: 50px;
+    left: 300px;
+    top: 50px;
+}
+
+.second-button {
+    position: relative;
+    width: 233px;
+    height: 50px;
+    top: 0px;
+    left: 832px;
+}
+
+.form-header h2 {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    color: #2F4858;
+    margin-top: 150px;
+}
+
+.form-content {
+    width: 612px;
+    margin: 0 auto;
+    margin-top: 58px;
+}
+
+.form-flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.name input {
+    width: 296px;
+    height: 43px;
+    background: rgba(196, 196, 196, 0.4);
+    border-radius: 6px;
+}
+
+.email input {
+    width: 296px;
+    height: 43px;
+    background: rgba(196, 196, 196, 0.4);
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+.telephone input {
+    width: 612px;
+    height: 43px;
+    background: rgba(196, 196, 196, 0.4);
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.comment input {
+    width: 612px;
+    height: 232px;
+    background: rgba(196, 196, 196, 0.4);
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.form-container ::-webkit-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    -webkit-box-align: center;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #2F4858;
+}
+
+.form-container :-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    -ms-flex-align: center;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #2F4858;
+}
+
+.form-container ::-ms-input-placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    -ms-flex-align: center;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #2F4858;
+}
+
+.form-container ::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #2F4858;
+}
+
+.form-container .comment input::-webkit-input-placeholder {
+    position: relative;
+    top: -95px;
+}
+
+.form-container .comment input:-ms-input-placeholder {
+    position: relative;
+    top: -95px;
+}
+
+.form-container .comment input::-ms-input-placeholder {
+    position: relative;
+    top: -95px;
+}
+
+.form-container .comment input::placeholder {
+    position: relative;
+    top: -95px;
+}
+
+.form-container input {
+    padding: 13px 0px 10px 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    color: #2F4858;
+}
+
+.text-info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F4858;
+    width: 612px;
+    height: 25px;
+    margin-top: 17px;
+}
+
+.checkbox {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F4858;
+    margin-top: 25px;
+    margin-left: 2px;
+}
+
+.label-text {
+    top: -18px;
+    left: 38px;
+    position: relative;
+    display: block;
+    width: 572px;
+    height: 39px;
+}
+
+.submit-box {
+    width: 182px;
+    height: 62px;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.form-content .submit-box input {
+    border-radius: 29px;
+    width: 182px;
+    height: 62px;
+    background-color: #FFA800;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-right: 12px;
+    padding-top: 8px;
+}
+
+.logo-container {
+    margin-top: 150px;
+    width: 1366px;
+    height: 533.32px;
+    background-image: linear-gradient(transparent 50px, #2F4858 10px);
+}
+
+.logo-header h3 {
+    position: relative;
+    top: 102px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #2F4858;
+}
+
+.logo-flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 184px;
+}
+
+.logo-flexbox .logo-4 {
+    margin-top: -19px;
+}
+
+.orange-bg {
+    position: absolute;
+}
+
+.logo-1 {
+    margin-left: 168px;
+}
+
+.logo-2 {
+    margin-left: 85.05px;
+}
+
+.logo-3 {
+    margin-left: 84.68px;
+}
+
+.logo-4 {
+    margin-left: 85.04px;
+}
+
+@media only screen and (max-width: 800px) {
+    .paragraph-container p.SparkleHeart {
+        position: relative;
+        margin: 0 auto;
+        width: 616px;
+        height: 140px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #2F4858;
+        margin-top: 142px;
+    }
+    div.photos-container {
+        margin-top: 145px;
+    }
+    div.flex-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-top: 18px;
+        width: 768px;
+        height: 216px;
+    }
+    div.flex-container .first img {
+        margin-top: -10px;
+        width: 184px;
+        height: 200px;
+    }
+    div.flex-container .fifth img {
+        width: 229px;
+        height: 216px;
+    }
+    .flex-container .third img {
+        margin-top: -8px;
+        width: 167px;
+        height: 102px;
+    }
+    .flex-container .fourth img {
+        width: 167px;
+        height: 104px;
+    }
+    div.flex-container .second img {
+        margin-top: -8px;
+        width: 188px;
+        height: 206px;
+    }
+    div.top-border {
+        position: absolute;
+        width: 768px;
+    }
+    div.top-border img {
+        width: 768px;
+        height: 31px;
+    }
+    div.bottom-border {
+        position: relative;
+        top: -22px;
+        width: 768px;
+    }
+    div.bottom-border img {
+        width: 768px;
+        height: 31px;
+    }
+    .photos-column {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .photo {
+        line-height: 0;
+    }
+    div.question-container {
+        width: 320px;
+        height: 29px;
+        margin-top: 70px;
+    }
+    div.question-container h2 {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #2F4858;
+    }
+    .buttons-container button {
+        border-radius: 24px;
+        height: 50px;
+        width: 233px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background-color: #FFA800;
+        margin: 0 auto;
+    }
+    div.first-question {
+        position: relative;
+        width: 233px;
+        height: 29px;
+        left: 455px;
+        top: 35px;
+    }
+    div.second-question {
+        position: relative;
+        top: 5px;
+        left: 79px;
+        width: 233px;
+        height: 54px;
+    }
+    div.first-button {
+        position: relative;
+        width: 233px;
+        height: 50px;
+        left: 79px;
+        top: 108px;
+    }
+    div.second-button {
+        position: relative;
+        width: 233px;
+        height: 50px;
+        top: 58px;
+        left: 454px;
+    }
+    div.form-header h2 {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 44px;
+        text-align: center;
+        color: #2F4858;
+        margin-top: 204px;
+    }
+    div.form-content {
+        width: 610px;
+        margin-top: 55px;
+        margin-left: 79px;
+    }
+    div.form-flexbox {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    div.name input {
+        width: 294.07px;
+        height: 40px;
+        background: rgba(196, 196, 196, 0.4);
+        border-radius: 6px;
+    }
+    div.email input {
+        width: 294.07px;
+        height: 40px;
+        background: rgba(196, 196, 196, 0.4);
+        border-radius: 6px;
+        margin-left: 20px;
+    }
+    div.telephone input {
+        width: 608px;
+        height: 40px;
+        background: rgba(196, 196, 196, 0.4);
+        border-radius: 6px;
+        margin-top: 15px;
+    }
+    div.comment input {
+        width: 608px;
+        height: 230px;
+        background: rgba(196, 196, 196, 0.4);
+        border-radius: 6px;
+        margin-top: 15px;
+    }
+    div.form-container ::-webkit-input-placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.015em;
+        color: #2F4858;
+    }
+    div.form-container :-ms-input-placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.015em;
+        color: #2F4858;
+    }
+    div.form-container ::-ms-input-placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.015em;
+        color: #2F4858;
+    }
+    div.form-container ::placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.015em;
+        color: #2F4858;
+    }
+    div.form-container .comment input::-webkit-input-placeholder {
+        position: relative;
+        top: -95px;
+    }
+    div.form-container .comment input:-ms-input-placeholder {
+        position: relative;
+        top: -95px;
+    }
+    div.form-container .comment input::-ms-input-placeholder {
+        position: relative;
+        top: -95px;
+    }
+    div.form-container .comment input::placeholder {
+        position: relative;
+        top: -95px;
+    }
+    .form-container input {
+        padding: 13px 0px 10px 12px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.015em;
+        color: #2F4858;
+    }
+    div.text-info {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #2F4858;
+        width: 608px;
+        height: 19px;
+        margin-top: 16px;
+    }
+    div.checkbox {
+        width: 568px;
+        height: 39px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13.5px;
+        line-height: 17px;
+        color: #2F4858;
+        margin-top: 10px;
+    }
+    label.label-text {
+        top: -18px;
+        left: 40px;
+        position: relative;
+        display: block;
+        width: 568px;
+        height: 39px;
+    }
+    div.submit-box {
+        width: 182px;
+        height: 62px;
+        margin-left: 212px;
+        margin-top: 50px;
+    }
+    div.form-content .submit-box input {
+        width: 182px;
+        height: 62px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-left: 15px;
+        padding-top: 8px;
+    }
+    div.logo-container {
+        margin-top: 135px;
+        width: 768px;
+        height: 533.32px;
+        background-image: linear-gradient(transparent 50px, #2F4858 10px);
+    }
+    div.logo-header h3 {
+        position: relative;
+        top: -230px;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #2F4858;
+    }
+    div.logo-flexbox {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        width: 768px;
+        top: -170px;
+    }
+    .logo-flexbox .logo-4 {
+        margin-top: 0px;
+    }
+    div.orange-box {
+        width: 768px;
+        height: 300px;
+        background-image: url("../img/Subtractfooter.svg");
+        background-position-x: 0px;
+        background-size: 768px 300px;
+    }
+    div .orange-bg {
+        display: none;
+    }
+    .logo-1 img {
+        position: relative;
+        top: -26px;
+        left: -89px;
+        width: 144px;
+        height: 47px;
+    }
+    .logo-2 img {
+        position: relative;
+        top: -26px;
+        left: -124px;
+        width: 123px;
+        height: 47px;
+    }
+    .logo-3 img {
+        position: relative;
+        top: -26px;
+        left: -158px;
+        width: 142px;
+        height: 47px;
+    }
+    .logo-4 {
+        position: relative;
+        top: -37px;
+        left: -194px;
+        img {
+            width: 49px;
+            height: 71px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .paragraph-container p.SparkleHeart {
+        position: relative;
+        width: 285px;
+        height: 124px;
+        margin: 0 auto;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #2F4858;
+        margin-top: 79px;
+    }
+    div.photos-container {
+        margin-top: 50px;
+    }
+    div.flex-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-top: 18px;
+        width: 320px;
+    }
+    .flex-container :nth-child(1) {
+        -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+        order: 4;
+    }
+    .flex-container :nth-child(2) {
+        -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+        order: 5;
+    }
+    .flex-container :nth-child(3) {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .flex-container :nth-child(4) {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    .flex-container :nth-child(5) {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+    div.flex-container .first img {
+        margin-top: -8px;
+        width: 168px;
+        height: 183px;
+    }
+    div.flex-container .fifth img {
+        margin-top: 18px;
+        width: 184px;
+        height: 174px;
+    }
+    .flex-container .third img {
+        margin-top: 17px;
+        width: 136px;
+        height: 82px;
+    }
+    .flex-container .fourth img {
+        width: 136px;
+        height: 85px;
+    }
+    div.flex-container .second img {
+        margin-top: -9px;
+        width: 152px;
+        height: 183px;
+    }
+    div.top-border {
+        position: absolute;
+        margin-top: 25px;
+        width: 320px;
+        height: 55px;
+        img {
+            width: 320px;
+        }
+    }
+    div.bottom-border {
+        position: relative;
+        top: 140px;
+        width: 320px;
+        height: 55px;
+        img {
+            width: 320px;
+        }
+    }
+    .photos-column {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .photo {
+        line-height: 0;
+    }
+    div.question-container {
+        width: 320px;
+        height: 29px;
+        margin-top: 230px;
+    }
+    div.question-container h2 {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #2F4858;
+    }
+    .buttons-container button {
+        border-radius: 24px;
+        height: 50px;
+        width: 233px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background-color: #FFA800;
+        margin: 0 auto;
+    }
+    div.first-question {
+        position: relative;
+        width: 320px;
+        height: 29px;
+        left: 4px;
+        top: 6px;
+    }
+    div.second-question {
+        position: relative;
+        top: 165px;
+        left: 20px;
+        width: 280px;
+        height: 55px;
+    }
+    div.first-button {
+        position: relative;
+        width: 233px;
+        height: 50px;
+        left: 47px;
+        top: 35px;
+    }
+    div.second-button {
+        position: relative;
+        width: 233px;
+        height: 50px;
+        top: 200px;
+        left: 47px;
+    }
+    div.form-header h2 {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #2F4858;
+        margin-top: 320px;
+    }
+    div.form-content {
+        width: 285px;
+        margin: 0 auto;
+        margin-top: 28px;
+        margin-left: 20px;
+    }
+    div.form-flexbox {
+        display: block;
+    }
+    div.name input {
+        width: 280px;
+        height: 35px;
+        background: rgba(196, 196, 196, 0.4);
+        border-radius: 6px;
+    }
+    div.email input {
+        width: 280px;
+        height: 35px;
+        background: rgba(196, 196, 196, 0.4);
+        border-radius: 6px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    div.telephone input {
+        width: 280px;
+        height: 35px;
+        background: rgba(196, 196, 196, 0.4);
+        border-radius: 6px;
+        margin-top: 10px;
+    }
+    div.comment input {
+        width: 280px;
+        height: 150px;
+        background: rgba(196, 196, 196, 0.4);
+        border-radius: 6px;
+        margin-top: 12px;
+    }
+    div.form-container ::-webkit-input-placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.015em;
+        color: #2F4858;
+    }
+    div.form-container :-ms-input-placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.015em;
+        color: #2F4858;
+    }
+    div.form-container ::-ms-input-placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.015em;
+        color: #2F4858;
+    }
+    div.form-container ::placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.015em;
+        color: #2F4858;
+    }
+    div.form-container .comment input::-webkit-input-placeholder {
+        position: relative;
+        top: -58px;
+    }
+    div.form-container .comment input:-ms-input-placeholder {
+        position: relative;
+        top: -58px;
+    }
+    div.form-container .comment input::-ms-input-placeholder {
+        position: relative;
+        top: -58px;
+    }
+    div.form-container .comment input::placeholder {
+        position: relative;
+        top: -58px;
+    }
+    .form-container input {
+        padding: 13px 0px 10px 12px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.015em;
+        color: #2F4858;
+    }
+    div.text-info {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        width: 280px;
+        height: 18px;
+        margin-top: 10px;
+    }
+    div.checkbox {
+        width: 243px;
+        height: 63px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #2F4858;
+        margin-top: 10px;
+    }
+    label.label-text {
+        top: -16px;
+        left: 35px;
+        position: relative;
+        display: block;
+        width: 243px;
+        height: 63px;
+    }
+    div.submit-box {
+        width: 140px;
+        height: 48px;
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+    div.form-content .submit-box input {
+        width: 140px;
+        height: 48px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        padding-left: 50px;
+        padding-top: 8px;
+    }
+    div.logo-container {
+        margin-top: 110px;
+        width: 320px;
+        height: 503.32px;
+        background-image: linear-gradient(transparent 50px, #2F4858 10px);
+    }
+    div.logo-header h3 {
+        position: relative;
+        top: -362px;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #2F4858;
+    }
+    div.logo-flexbox {
+        display: block;
+        position: relative;
+        width: 320px;
+        top: -270px;
+    }
+    .logo-flexbox .logo-4 {
+        margin-top: -19px;
+    }
+    div.orange-box {
+        width: 320px;
+        height: 455px;
+        background-image: url("../img/Subtractfooter.svg");
+        background-position-x: -752px;
+        background-position-y: 0px;
+        background-size: 1366px 429px;
+    }
+    div .orange-bg {
+        display: none;
+    }
+    .logo-1 img {
+        position: relative;
+        left: -149px;
+        top: -30px;
+        width: 135px;
+        height: 44px;
+    }
+    .logo-2 img {
+        position: relative;
+        left: 85px;
+        top: -80px;
+        width: 130px;
+        height: 50px;
+    }
+    .logo-3 img {
+        position: relative;
+        left: -64px;
+        top: -39px;
+        width: 131px;
+        height: 44px;
+    }
+    div.logo-4 {
+        width: 48px;
+        height: 67px;
+        position: relative;
+        top: -74px;
+        left: 125px;
+        img {
+            width: 48px;
+            height: 67px;
+        }
+    }
+}
+
+.footer-info {
+    width: 1366px;
+    height: 324.34px;
+    background-color: #2F4858;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer-info li {
+    list-style: none;
+}
+
+.footer-logo {
+    margin-top: -10px;
+    margin-left: 62px;
+}
+
+.footer-logo p {
+    margin-top: 70px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.footer-menu {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 137px;
+    margin-top: -12px;
+    color: #FFFFFF;
+}
+
+.footer-menu li:nth-child(2),
+.footer-menu li:nth-child(3) {
+    margin-top: 24px;
+}
+
+.footer-menu li:nth-child(4) {
+    margin-top: 20px;
+}
+
+.footer-menu li:nth-child(4),
+.footer-menu li:nth-child(5) {
+    height: 45px;
+}
+
+.footer-menu li:first-child {
+    margin-left: 3px;
+}
+
+.rekviziti {
+    margin-left: 109px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: -12px;
+}
+
+.rekviziti li:first-child {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.rekviziti li:nth-child(2) {
+    margin-top: 18px;
+}
+
+.rekviziti li:nth-child(3) {
+    margin-top: 10px;
+}
+
+.rekviziti li:nth-child(4) {
+    margin-top: 9px;
+}
+
+.footer-autor {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #FFFFFF;
+    width: 390px;
+    margin-top: -13px;
+}
+
+.footer-autor li:first-child {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: #FFFFFF;
+    height: 45px;
+}
+
+.footer-autor li:nth-child(3) {
+    margin-top: 12px;
+}
+
+.footer-autor li:nth-child(4) {
+    margin-top: 10px;
+}
+
+.footer-img-flexbox {
+    margin-top: 52px;
+}
+
+.footer-first-image {
+    margin-right: 24px;
+}
+
+.footer-second-image {
+    margin-right: -3px;
+}
+
+.privacy {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    margin-top: 47px;
+    color: #FFFFFF;
+}
+
+button:hover {
+    background-color: #FFDA16;
+}
+
+button:active {
+    background-color: #FF8A00;
+}
+
+.form-content .submit-box input:hover {
+    background-color: #FFDA16;
+}
+
+.form-content .submit-box input:active {
+    background-color: #FF8A00;
+}
+
+#toTheTop {
+    display: none;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 1%;
+    right: 15%;
+    z-index: 5;
+    background-image: url("../img/free-arrow-up-icon-2826-thumb.png");
+    background-color: #FF8A00;
+    background-size: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#toTheTop:hover {
+    background-color: #FFDA16;
+}
+
+.skatit-rekvizitus {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    div.footer-info {
+        width: 768px;
+        height: 364px;
+        background-color: #2F4858;
+        display: block;
+    }
+    .footer-info li {
+        list-style: none;
+    }
+    div.footer-logo {
+        margin-top: -195px;
+        margin-left: 79px;
+        height: 364px;
+    }
+    .footer-logo img {
+        width: 162px;
+        height: 162px;
+    }
+    div.footer-logo p {
+        margin-top: 300px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    div.footer-menu {
+        display: none;
+    }
+    div.rekviziti {
+        display: none;
+    }
+    div.footer-autor {
+        position: relative;
+        top: -118px;
+        left: 276px;
+        margin-left: 20px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        color: #FFFFFF;
+        margin-top: -278px;
+    }
+    div.footer-autor li:first-child {
+        position: relative;
+        top: 201px;
+        left: -217px;
+        text-align: left;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        /* identical to box height */
+        color: #FFFFFF;
+    }
+    div.footer-autor li:nth-child(2) {
+        padding-top: 8px;
+    }
+    div.footer-autor li:nth-child(3) {
+        margin-top: 11px;
+    }
+    .footer-img-flexbox {
+        margin-top: 52px;
+    }
+    img.footer-first-image {
+        margin-top: 14px;
+        margin-right: 32px;
+        width: 12.5px;
+        height: 25px;
+    }
+    img.footer-second-image {
+        margin-top: 14px;
+        width: 25px;
+        height: 25px;
+    }
+    div.skatit-rekvizitus {
+        display: block;
+        width: 160px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        position: relative;
+        top: -225px;
+        left: 536px;
+    }
+    p.privacy {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        position: relative;
+        left: 0px;
+        top: -15px;
+    }
+    .desktop {
+        display: none;
+    }
+    .footer-logo p.mobile {
+        display: block;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        margin-top: 263px;
+        position: relative;
+        top: -170px;
+    }
+    button:hover {
+        background-color: #FFDA16;
+    }
+    button:active {
+        background-color: #FF8A00;
+    }
+    .form-content .submit-box input:hover {
+        background-color: #FFDA16;
+    }
+    .form-content .submit-box input:active {
+        background-color: #FF8A00;
+    }
+    #toTheTop {
+        display: none;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 1%;
+        right: 15%;
+        z-index: 5;
+        background-image: url("../img/free-arrow-up-icon-2826-thumb.png");
+        background-color: #FF8A00;
+        background-size: 40px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+}
+
+
+/*MOBILE VERSION*/
+
+@media only screen and (max-width: 500px) {
+    div.footer-info {
+        width: 320px;
+        height: 483px;
+        background-color: #2F4858;
+        display: block;
+    }
+    .footer-info li {
+        list-style: none;
+    }
+    div.footer-logo {
+        margin-top: -75px;
+        margin-left: 21px;
+    }
+    .footer-logo img {
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    .footer-info div.footer-logo p {
+        position: relative;
+        top: 0px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+    div.footer-menu {
+        display: none;
+    }
+    div.rekviziti {
+        display: none;
+    }
+    div.footer-autor {
+        width: 290px;
+        margin-left: -256px;
+        margin-top: -119px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        text-align: left;
+    }
+    div.footer-autor li:first-child {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        text-align: left;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    div.footer-autor li:nth-child(2) {
+        padding-top: 8px;
+    }
+    div.footer-autor li:nth-child(3) {
+        margin-top: 13px;
+    }
+    .footer-img-flexbox {
+        margin-top: 52px;
+    }
+    img.footer-first-image {
+        margin-right: 32px;
+        width: 12.5px;
+        height: 25px;
+    }
+    img.footer-second-image {
+        margin-top: 13px;
+        width: 25px;
+        height: 25px;
+    }
+    div.skatit-rekvizitus {
+        display: block;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        position: relative;
+        top: -87px;
+        left: 21px;
+    }
+    p.privacy {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        color: #FFFFFF;
+        position: relative;
+        left: -187px;
+        top: 8px;
+    }
+    .desktop {
+        display: none;
+    }
+    .footer-logo p.mobile {
+        display: block;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        color: #FFFFFF;
+        margin-top: 270px;
+    }
+    button:hover {
+        background-color: #FFDA16;
+    }
+    button:active {
+        background-color: #FF8A00;
+    }
+    .form-content .submit-box input:hover {
+        background-color: #FFDA16;
+    }
+    .form-content .submit-box input:active {
+        background-color: #FF8A00;
+    }
+    #toTheTop {
+        display: none;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 1%;
+        right: 17%;
+        z-index: 5;
+        background-image: url("../img/free-arrow-up-icon-2826-thumb.png");
+        background-color: #FF8A00;
+        background-size: 40px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */
